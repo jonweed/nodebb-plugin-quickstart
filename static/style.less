@@ -1,1 +1,58 @@
-/* Place any LESS in here */
+@ro-bar-color:			#EFF4F7;
+@ro-box-color:			#fff;
+@ro-padding:			15px;
+@ro-padding-sm:			10px;
+@ro-padding-xs:			6px;
+@ro-border-radius:		0.25rem;
+@ro-spacing:			20px;
+@ro-vote-color:			#AEB1B3;
+@ro-permalink-color:		#747577;
+@ro-parentlink-bgcolor:		#F2F4F6;
+@ro-bar-bghover:		#EFF2F5;
+@ro-replies-line-color:		#CDD2D6;
+@ro-spinner-color:		#1976d2;
+@ro-head-horizontal-width:	150px;
+
+
+.ro-panel-about {
+	display: flex;
+	flex-flow:column nowrap;
+	align-items: stretch;
+	margin-bottom: @ro-spacing;
+	padding: 0;
+
+	> .ro-bar {
+		display: flex;
+		flex:1 1 auto;
+		flex-flow: column nowrap;
+		border-radius: @ro-border-radius @ro-border-radius 0 0;
+		padding: @ro-padding 0 0 @ro-padding;
+		background: @ro-bar-color;
+		align-items:stretch;
+	}
+
+	> .ro-box {
+		display: flex;
+		flex:0 0 auto;
+		flex-flow: column nowrap;
+		align-items: stretch;
+		position:relative;
+		background: @ro-box-color;
+		border-radius: 0 0 @ro-border-radius @ro-border-radius;
+		margin-left:0;
+	}
+}
+
+
+.ro-panel-about > .ro-bar {
+	> .ro-head {
+		display: flex;
+		flex:1 1 0px;
+		flex-flow:row nowrap;
+		align-items:stretch;
+		
+		> * {
+			flex:1 1 auto;
+		}
+	}
+}
